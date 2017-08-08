@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>TITLE</title>
+		<link rel="stylesheet" type="text/css" href="styles/responsive/normalize.css" media="all"/>
+		<link rel="stylesheet" type="text/css" href="styles/responsive/starter.css" media="all"/>
+		<link rel="stylesheet" type="text/css" href="styles/responsive/custom.css" media="all"/>
+		<link rel="stylesheet" type="text/css" href="styles/responsive/colors.css" media="all"/>
+		<!-- npm install mdi -->
+		<!-- <link rel="stylesheet" type="text/css" href="node_modules/mdi/css/materialdesignicons.min.css" media="all"/> -->
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- MOBILE NO RESCALE DIRECTIVE -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	</head>
+	<body id="application">
+		<!-- 
+		
+		starter.css
+		
+		class:row defines a new row 
+		-->
+		<div class="row">
+			<!--
+			
+			starter.css
+			
+			class:col defines a new column 
+			class:lg-x defines column size when screen is large (x from 0 to 12)
+			class:md-x defines column size when screen is medium
+			class:sm-x defines column size when screen is small
+			class:xs-x defines column size when screen is extra small
+			
+			priority is "lg" then "md", "sm" and "xs"
+			
+			-->
+			<div class="col lg-12">
+				<!--
+				
+				custom.css
+				
+				class:card creates a 100% wide card, must be included in a col for better effect
+				class:title creates a title
+				
+				-->
+				<div class="card">
+					<h3 class="title blue">Title vue test</h3>
+					<!--
+					
+					starter.css
+					
+					class:btn applied on "a" inside a nav>ul>li
+					class:title creates a title
+					
+					-->
+					<nav>
+						<ul>
+							<li><a class="btn disabled" href="#">menu item 1</a></li>
+							<li><a class="btn" href="#">menu item 2</a></li>
+							<li><a class="btn" href="#">very long menu item</a></li>
+							<li><a class="btn" href="#">short</a></li>
+						</ul>
+					<nav>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col lg-4 lg-offset-2 md-offset-0 md-6 sm-12">
+				<div class="card">
+					<h4 class="title green">local title</h4>
+					<p>This paragraph is located on the left.</p>
+				</div>
+			</div>
+			<div class="col lg-4 md-offset-0 md-6 sm-12">
+				<div class="card">
+					<h4 class="title red">local title</h4>
+					<p>This paragraph is located on the right.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col lg-12">
+				<div class="card">
+					<h4 class="title">vertical menu</h4>
+					<!--
+					
+					starter.css
+					
+					class:nav.block defines a menu with vertical-arranged items
+					-->					
+					<nav class="block font-smaller">
+						<ul>
+							<li><a class="btn" href="#">menu item 1</a></li>
+							<li><a class="btn" href="#">menu item 2</a></li>
+							<li><a class="btn" href="#">menu item 3</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col lg-12">
+				<div class="card">
+					<h4 class="title golden">long paragraph test</h4>
+					<p>As of version 1.6.80+, the mdi class can no longer be applied once to a parent element so that all child elements inherit the mdi styles needed to render icons (set the font to use the mdi iconfont etc). To remedy this, we have added a new class .mdi-set. This simply allows you to do something like the following example without specifying the mdi class on every icon.</p>
+					<p>This change should not affect any existing icons other than rare cases where the mdi class is inherited by the icon element from a parent. If you are having issues please refer to the Iconsets webfont feature below which explains this in more detail and shows how it can be fixed. If this does not solve the problem feel free to open a new issue on github with the title 'Broken Icons After Update' outlining the code which no longer works.</p>
+					<p>There are many different ways you can consume the Material Design Icons in your projects. The most common uses are listed below. Boostrap has a separate guide that can be viewed here.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col lg-12">
+				<div class="card">
+					<h4 class="title purple">some tourism photos</h4>
+					<div class="row">
+						<div class="col lg-4 md-6 sm-12">
+							<figure class="wrapper">
+								<img src="images/examples/doitsu-mura.jpg" />
+								<figcaption>Doitsu Mura, Japan</figcaption>
+							</figure>
+						</div>
+						<div class="col lg-4 md-6 sm-12">
+							<figure class="wrapper">
+								<img src="images/examples/hakone-sky.jpg" />
+								<figcaption>Blue summer sky with some clouds.</figcaption>
+							</figure>
+						</div>
+						<div class="col lg-4 md-6 sm-12">
+							<figure class="wrapper">
+								<img src="images/examples/birthday-card.jpg" />
+								<figcaption>An invitation card.</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col lg-12">
+				<section class="card">
+					<div class="row">
+						<div class="col lg-4 md-6 sm-12">
+							<h4 class="title purple">section 1 card test</h4>
+							<p>The idea of character recognition has become very important as handheld devices like the Palm Pilot are becoming increasingly popular. Neural networks can be used to recognize handwritten characters.</p>
+						</div>
+						<div class="col lg-4 md-6 sm-12">
+							<h4 class="title blue">section 2 card test</h4>
+							<p>Neural networks can receive and process vast amounts of information at once, making them useful in image compression. With the Internet explosion and more sites using more images on their sites, using neural networks for image compression is worth a look.</p>
+						</div>
+						<div class="col lg-4 md-6 sm-12">
+							<section class="card">
+								<h4 class="title gray">section 3 card test</h4>
+								<p>The day-to-day business of the stock market is extremely complicated. Many factors weigh in whether a given stock will go up or down on any given day. Since neural networks can examine a lot of information quickly and sort it all out, they can be used to predict stock prices.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
